@@ -1,0 +1,24 @@
+<%= form_for@test do |f| %>
+
+<div class="form-group">
+<%= f.label :firstname%>
+<%= f.text_field :firstname%>    
+</div>
+
+<div class="form-group">
+<%= f.label :lastname%>
+<%= f.text_field :lastname%>    
+</div>
+
+<div class="form-group">
+<%= f.label :designation%>
+<%= f.text_field :designation%>    
+</div>
+
+<div class="form-group">
+<%= f.label :origin%>
+<%= f.text_field :origin%>    
+</div>
+
+<%= f.submit "Submit"%>
+<%end%>

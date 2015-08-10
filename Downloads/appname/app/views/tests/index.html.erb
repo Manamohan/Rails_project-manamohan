@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1>Welcome for Testing</h1>
+<h2> Enroll for testing</h2>
+<%= link_to "Sign_up", new_test_path %>
+
+
+<h1>List of users</h1>
+	<% @tests.each do |test| %>
+
+	<table style="width:40%; border:2px solid" >
+		<tr>
+		<th>Firstname</th>
+		<th>Lastname</th>
+		<th>Designation</th>
+		<th>Origin</th>
+		</tr>
+		<tr>
+			<td><%= test.firstname %></td>
+			<td><%= test.lastname %></td>
+			<td><%= test.designation %></td>
+			<td><%= test.origin %></td>
+		</tr>	
+	</table>
+	<%end%>
+
+
+</body>
+</html>
+
+

@@ -1,0 +1,5 @@
+development:
+ adapter: postgresql
+ port: 5432
+ username: postgres
+ database: test_application_development
